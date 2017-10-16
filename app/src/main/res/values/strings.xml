@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PermissionImageLoaderExample</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading_by_thread">Loading by thread</string>
+    <string name="loading_by_asynctask">Loading by asynctask</string>
+</resources>
