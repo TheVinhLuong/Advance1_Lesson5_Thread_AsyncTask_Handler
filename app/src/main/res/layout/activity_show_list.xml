@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.android.recyclerviewexample.screen.showlist.ShowListViewModel"
+            />
+
+        <variable
+            name="viewPagerAdapter"
+            type="com.example.android.recyclerviewexample.screen.showlist.ShowListPagerAdapter"
+            />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screen.showlist.ShowListActivity"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            app:viewPagerAdapter="@{viewPagerAdapter}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </android.support.v4.view.ViewPager>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
